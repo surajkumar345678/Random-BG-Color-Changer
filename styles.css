@@ -26,12 +26,20 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  margin: 0;
 }
 
 /* Background information container */
 .bg-information-container {
   margin: 15px 0 25px;
   font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#bg-hex-code {
+  font-weight: 700;
 }
 
 /* Button styling */
@@ -45,8 +53,66 @@ body {
   border: 3px solid var(--golden-yellow);
   border-radius: 5px;
   font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn:active {
+  box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.2);
+  transform: scale(0.98);
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  border-radius: 50%;
+  transition: width 0.5s, height 0.5s;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.btn:active::after {
+  width: 0;
+  height: 0;
+  transition: width 0s, height 0s;
 }
 
 .btn:hover {
   background-image: linear-gradient(#ffcc4c, #f89808);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Additional styling for copy button */
+#copy-btn {
+  background-color: var(--yellow);
+  border: 3px solid var(--yellow);
+}
+
+/* Toast Notification */
+.toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.3s ease;
+  transform: translateY(-20px);
+  z-index: 1000;
+}
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.toast i {
+  margin-right: 10px;
 }

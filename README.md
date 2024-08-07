@@ -1,40 +1,45 @@
-# Random Background Color Changer
+### Random Background Color Changer
 
-A simple web application that changes the background color to a random color every time a button is clicked. This project demonstrates the use of HTML, CSS, and JavaScript to create an interactive user experience.
+A simple web application that changes the background color to a random color each time a button is clicked. This project demonstrates the use of HTML, CSS, and JavaScript to create an interactive and modern user experience.
 
-## Table of Contents
+#### Table of Contents
 - [Demo](#demo)
 - [Features](#features)
 - [Screenshots](#screenshots)
 - [Technologies Used](#technologies-used)
 - [Contributing](#contributing)
-- [License](#license)
 
-## Demo
+#### Demo
 Check out the live demo [here](https://surajkumar345678.github.io/Random-BG-Color-Changer/).
 
-## Features
+#### Features
 - **Dynamic Color Generation:** Generates a random hex color code each time the button is clicked.
-- **Hex Code Display:** Displays the current background color's hex code on the screen.
+- **Hex Code Display:** Shows the current background color's hex code on the screen.
+- **Copy to Clipboard:** Allows users to copy the hex code to the clipboard with a click.
+- **Toast Notifications:** Provides feedback when the hex code is successfully copied.
 - **Responsive Design:** Ensures the application looks good on all screen sizes.
-- **CSS Hover Effects:** Adds an interactive hover effect to the button.
+- **CSS Hover and Click Effects:** Adds interactive hover and click effects to buttons.
 
-## Screenshots
+#### Screenshots
 Here are some screenshots of the application:
+![Screenshot (156)](https://github.com/user-attachments/assets/e4061e17-ce48-43ac-9bbf-1f946d155ecf)
 
-![Screenshot 1](https://surajkumar345678.github.io/Random-BG-Color-Changer/screenshot1.png)
-![Screenshot 2](https://surajkumar345678.github.io/Random-BG-Color-Changer/screenshot2.png)
+![Screenshot (157)](https://github.com/user-attachments/assets/6fb7c0e4-fa66-451e-adc0-c39fdbc5ce66)
 
-## Technologies Used
+![Screenshot (155)](https://github.com/user-attachments/assets/3e3ed682-bba7-4e74-817d-3c19ca0bd1be)
+
+#### Technologies Used
 - **HTML:** For structuring the web page.
-- **CSS:** For styling the web page.
-- **JavaScript:** For adding interactivity to the web page.
+- **CSS:** For styling the web page, including hover and click effects.
+- **JavaScript:** For generating colors, handling button clicks, and showing notifications.
+- **Font Awesome:** For icons used in the UI.
 
-## Contributing
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+#### Contributing
+Contributions are welcome! To contribute:
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a pull request
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+---
